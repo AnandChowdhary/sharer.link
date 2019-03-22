@@ -1,8 +1,28 @@
 {
   "name": "sharer.link",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "git@github.com:AnandChowdhary/sharer.link",
-  "author": "Anand Chowdhary <anandchowdhary@gmail.com>",
-  "license": "MIT"
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "register-service-worker": "^1.6.2",
+    "vue": "^2.6.6",
+    "vue-class-component": "^6.0.0",
+    "vue-property-decorator": "^7.0.0",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.5.0",
+    "@vue/cli-plugin-pwa": "^3.5.0",
+    "@vue/cli-plugin-typescript": "^3.5.0",
+    "@vue/cli-service": "^3.5.0",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.1.0",
+    "typescript": "^3.2.1",
+    "vue-template-compiler": "^2.5.21"
+  }
 }
