@@ -1,4 +1,4 @@
-# sharer.link
+# 🔗 Sharer.link
 
 ## Project setup
 ```
@@ -27,3 +27,8 @@ yarn run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+## License
+
+- Code: MIT
+- Icon: Share by [Dinosoft Labs](https://thenounproject.com/dinosoftlabs/) from [the Noun Project](https://thenounproject.com/)
