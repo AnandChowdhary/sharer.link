@@ -1,10 +1,14 @@
 <template>
   <main>
+    <header>
+      <!-- <img alt="Sharer.link icon" src="/logo.png"> -->
+      <h1>Sharer.link</h1>
+    </header>
     <form>
       <input class="search-input" v-model="query" type="search" placeholder="Search for something...">
     </form>
     <section :class="`loading-${loading}`">
-      <a class="card" :href="`/${result.kind || result.wrapperType}/${slugify(result)}`" v-for="(result, key) in results" :key="`result_${key}`">
+      <router-link class="card" :to="`/${result.kind || result.wrapperType}/${slugify(result)}`" v-for="(result, key) in results" :key="`result_${key}`">
         <article>
           <div class="album-art">
             <img :src="result.artworkUrl100">
@@ -14,7 +18,7 @@
             <div class="info"><span style="text-transform: capitalize">{{result.kind || result.wrapperType}}</span> by {{result.artistName}}</div>
           </div>
         </article>
-      </a>
+      </router-link>
     </section>
   </main>
 </template>
@@ -32,13 +36,16 @@ import slugify from '@/slugify';
 })
 export default class Home extends Vue {
   private results: any = [];
-  private query: string = 'hello internet';
+  private query: string = '';
   private loading: boolean = false;
   private slugify = slugify;
   private mounted() {
     this.search();
   }
   private search() {
+    if (!this.query) {
+      return;
+    }
     this.loading = true;
     api(`https://itunes.apple.com/search?term=${encodeURIComponent(this.query)}&limit=5`)
       .then((result) => {
@@ -81,5 +88,8 @@ article {
 }
 .loading-true {
   opacity: 0.5;
+}
+header {
+  text-align: center;
 }
 </style>

@@ -3,6 +3,21 @@
 	publish = "dist"
 
 [[redirects]]
-	from = "/*"
+	from = "/podcast/*"
+	to = "/index.html"
+	status = 200
+
+[[redirects]]
+	from = "/song/*"
+	to = "/index.html"
+	status = 200
+
+[[redirects]]
+	from = "/audiobook/*"
+	to = "/index.html"
+	status = 200
+
+[[redirects]]
+	from = "/feature-movie/*"
 	to = "/index.html"
 	status = 200

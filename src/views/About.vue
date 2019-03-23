@@ -56,6 +56,42 @@
       </div>
     </div>
     <!-- {{result}} -->
+    <div class="link-sharing">
+      <div class="verb">Share on:</div>
+      <div class="buttons">
+        <a v-if="mobile" :href="`whatsapp://send?text=${currentUrl}`" class="whatsapp">
+          <font-awesome-icon title="Whatsapp" fixed-width :icon="['fab', 'whatsapp']" />
+        </a>
+        <a v-if="mobile" :href="`https://telegram.me/share/url?url=${encodeCurrentUrl}`" class="telegram">
+          <font-awesome-icon title="Telegram" fixed-width :icon="['fab', 'telegram']" />
+        </a>
+        <a v-if="mobile" :href="`fb-messenger://share/?link=${encodeCurrentUrl}`" class="messenger">
+          <font-awesome-icon title="Messenger" fixed-width :icon="['fab', 'facebook-messenger']" />
+        </a>
+        <a :href="`https://www.facebook.com/sharer/sharer.php?u=${encodeCurrentUrl}`" class="facebook">
+          <font-awesome-icon title="Facebook" fixed-width :icon="['fab', 'facebook']" />
+        </a>
+        <a :href="`https://twitter.com/home?status=${encodeCurrentUrl}`" class="twitter">
+          <font-awesome-icon title="Twitter" fixed-width :icon="['fab', 'twitter']" />
+        </a>
+        <a v-if="!mobile" :href="`https://wa.me/whatsappphonenumber/?text=${encodeCurrentUrl}`" class="whatsapp">
+          <font-awesome-icon title="Whatsapp" fixed-width :icon="['fab', 'whatsapp']" />
+        </a>
+        <a :href="`https://pinterest.com/pin/create/button/?url=${encodeCurrentUrl}`" class="pinterest">
+          <font-awesome-icon title="Pinterest" fixed-width :icon="['fab', 'pinterest']" />
+        </a>
+        <a :href="`https://www.linkedin.com/shareArticle?mini=true&url=${encodeCurrentUrl}`" class="linkedin">
+          <font-awesome-icon title="Linkedin" fixed-width :icon="['fab', 'linkedin']" />
+        </a>
+        <a :href="`mailto:?&body=${currentUrl}`" class="email">
+          <font-awesome-icon title="email" fixed-width :icon="['fas', 'envelope']" />
+        </a>
+      </div>
+    </div>
+    <footer>
+      <p><router-link to="/">Share another link</router-link></p>
+      <router-link to="/" class="button sharerlink">Sharer.link</router-link>
+    </footer>
   </main>
 </template>
 
@@ -68,8 +104,11 @@ import slugify from '@/slugify';
 export default class Home extends Vue {
   private result: any = {};
   private loading: boolean = false;
+  private mobile: boolean = false;
   private slugify = slugify;
   private type = '';
+  private encodeCurrentUrl = '';
+  private currentUrl = '';
   private googleScheme(text: string) {
     return encodeURIComponent(btoa(text)).replace(/%2F/g, '_');
   }
@@ -77,6 +116,9 @@ export default class Home extends Vue {
     return encodeURIComponent(text);
   }
   private mounted() {
+    this.mobile = window.innerWidth < 500;
+    this.currentUrl = location.href;
+    this.encodeCurrentUrl = encodeURIComponent(location.href);
     this.loading = true;
     const slug = this.$route.params.slug;
     this.type = this.$route.path.split('/')[1];
@@ -190,5 +232,57 @@ export default class Home extends Vue {
   .button {
     width: 100%;
   }
+}
+footer {
+  text-align: center;
+  margin-top: 3rem;
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+.link-sharing {
+  margin-top: 2rem;
+}
+.link-sharing a {
+  display: block;
+  width: auto;
+  background-color: #333;
+  text-decoration: none;
+  font-size: 110%;
+  color: #fff;
+  margin-top: 1rem;
+  text-align: center;
+  padding: 0.25rem 1rem;
+  border-radius: 0.25rem;
+  font-size: 200%;
+  box-sizing: border-box;
+  &.whatsapp {
+    background-color: #6dd242;
+  }
+  &.facebook {
+    background-color: #37538d;
+  }
+  &.twitter {
+    background-color: #53a8e5;
+  }
+  &.pinterest {
+    background-color: #e23d31;
+  }
+  &.linkedin {
+    background-color: #2773af;
+  }
+  &.telegram {
+    background-color: #3c96c6;
+  }
+  &.messenger {
+    background-color: #147ff3;
+  }
+}
+.sharerlink {
+  background-color: #71e7c4;
+  color: #000000;
+  font-weight: bold;
+  width: 100%;
 }
 </style>
