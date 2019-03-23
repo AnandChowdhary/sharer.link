@@ -6,35 +6,71 @@
 [![Netlify](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Fdeveloper.oswaldlabs.com%2Fnetlify-status%2Fd4381a1b-2be9-4c3f-bc0c-f6032b9391dc)](https://app.netlify.com/sites/sharer-link/deploys)
 [![License](https://img.shields.io/github/license/AnandChowdhary/sharer.link.svg)](https://github.com/AnandChowdhary/sharer.link/blob/master/LICENSE)
 
-## Project setup
+Sharer.link is a way to easily share platform-agnostic links for songs, movies, podcasts, and more. Just send a link and let the receiver decide which service to use to open them.
+
+Example: https://sharer.link/podcast/hello-internet-811377230
+
+![Hello Internet example](https://raw.githubusercontent.com/AnandChowdhary/sharer.link/master/public/img/Screenshot%202019-03-23%20at%2016.05.46.png)
+
+## 🎵 Supported services
+
+### Music
+- Spotify
+- YouTube
+- Apple Music
+- Amazon Music
+- Google Play Music
+
+### Podcasts
+- Apple Podcasts
+- Google Podcasts
+- Pocket Casts
+- Overcast
+- Spotify
+- Player.fm
+- Gpodder.net
+- RSS feed
+
+### Audiobooks
+- Audible
+- Apple Books
+- Google Play Books
+- Amazon
+- Audiobooks.com
+
+### Movies
+- iTunes
+- Google Play Movies
+- Amazon Prime Video
+- Microsoft Store
+
+### Todo
+- [ ] Apps (App Store/Play Store/etc.)
+- [ ] Calendar events (addtocalendar.ga)
+- [ ] Places (Google Maps)
+- [ ] Map locations (coordinates)
+
+## 🛠 Development
+
+Install dependencies:
+
 ```
-yarn install
+yarn
 ```
 
-### Compiles and hot-reloads for development
+Compile and hot-reload for development:
+
 ```
-yarn run serve
+yarn serve
 ```
 
-### Compiles and minifies for production
+Compiles and minify for production:
+
 ```
-yarn run build
+yarn build
 ```
 
-### Run your tests
-```
-yarn run test
-```
-
-### Lints and fixes files
-```
-yarn run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
-
-## License
+## 📄 License
 
 - Code: MIT
 - Icon: Share by [Dinosoft Labs](https://thenounproject.com/dinosoftlabs/) from [the Noun Project](https://thenounproject.com/)
