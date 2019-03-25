@@ -4,7 +4,7 @@
       <!-- <img alt="Sharer.link icon" src="/logo.png"> -->
       <h1>Sharer.link</h1>
     </header>
-    <form>
+    <form @submit.prevent="search">
       <input class="search-input" v-model="query" type="search" placeholder="Search for something...">
     </form>
     <section :class="`loading-${loading}`">
