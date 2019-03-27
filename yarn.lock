@@ -871,10 +871,10 @@
     webpack ">=4 < 4.29"
     workbox-webpack-plugin "^3.6.3"
 
-"@vue/cli-plugin-typescript@^3.5.0":
-  version "3.5.1"
-  resolved "https://registry.yarnpkg.com/@vue/cli-plugin-typescript/-/cli-plugin-typescript-3.5.1.tgz#8ff3e7877567eac39c8d3e01ed45dfb1245d308a"
-  integrity sha512-SVKL8twkAELHdyL1SsmmTHsN8vLJI+zj/wAjkVdCXYrO6VH/8nn0/wnd81jXqjesEe8EPA4RCiOLESHh/05hrg==
+"@vue/cli-plugin-typescript@^3.5.2":
+  version "3.5.2"
+  resolved "https://registry.yarnpkg.com/@vue/cli-plugin-typescript/-/cli-plugin-typescript-3.5.2.tgz#009178b498514af3ccce47cf05fca2e71d4156bd"
+  integrity sha512-emU8WIv/XJlYapqX49YbS89UTiEaKfzvq5PnLSNtmicgUrsZ5Za8WPmf2eovIIkJUdHR7GlrbZItkJ1G+ZL9jA==
   dependencies:
     "@types/webpack-env" "^1.13.6"
     "@vue/cli-shared-utils" "^3.5.1"
