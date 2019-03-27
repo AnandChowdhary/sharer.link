@@ -24,7 +24,7 @@
     "@vue/cli-plugin-babel": "^3.5.0",
     "@vue/cli-plugin-pwa": "^3.5.0",
     "@vue/cli-plugin-typescript": "^3.5.2",
-    "@vue/cli-service": "^3.5.0",
+    "@vue/cli-service": "^3.5.2",
     "node-sass": "^4.9.0",
     "sass-loader": "^7.1.0",
     "typescript": "^3.2.1",

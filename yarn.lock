@@ -884,10 +884,10 @@
     tslint "^5.13.0"
     webpack ">=4 < 4.29"
 
-"@vue/cli-service@^3.5.0":
-  version "3.5.1"
-  resolved "https://registry.yarnpkg.com/@vue/cli-service/-/cli-service-3.5.1.tgz#d400ab956569a87f3947e7d6972f35c97de84145"
-  integrity sha512-c3xzj2+yrnyziDvkKBTD1cB2jDBs0E4G5gk21hHzvAwzyNSpMPTqwAaeAfUtKHWSgs1dKxi/gURfIgFGUJPn+Q==
+"@vue/cli-service@^3.5.2":
+  version "3.5.2"
+  resolved "https://registry.yarnpkg.com/@vue/cli-service/-/cli-service-3.5.2.tgz#8f05cb1c8113a060ff3d6258dfd8e733e3e94d38"
+  integrity sha512-uv9AXMM3gHLXDrJJ0uJdh29APvp6ZDHjrbaUYAPTdCg3SXXBajgfTDJJ51pi4XwAL2FVqnrRtE0PF8yf/QC1tg==
   dependencies:
     "@intervolga/optimize-cssnano-plugin" "^1.0.5"
     "@soda/friendly-errors-webpack-plugin" "^1.7.1"
