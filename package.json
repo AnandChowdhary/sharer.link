@@ -27,7 +27,7 @@
     "@vue/cli-service": "^3.5.3",
     "node-sass": "^4.9.0",
     "sass-loader": "^7.1.0",
-    "typescript": "^3.4.1",
+    "typescript": "^3.4.2",
     "vue-template-compiler": "^2.5.21"
   }
 }
