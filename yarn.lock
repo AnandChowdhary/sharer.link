@@ -861,12 +861,12 @@
     babel-loader "^8.0.5"
     webpack ">=4 < 4.29"
 
-"@vue/cli-plugin-pwa@^3.5.0":
-  version "3.5.1"
-  resolved "https://registry.yarnpkg.com/@vue/cli-plugin-pwa/-/cli-plugin-pwa-3.5.1.tgz#5bba2e533867b7fc8d62d028b6bfdc5a1962c120"
-  integrity sha512-BTwYPp6OLLDxuwZmeP9BNNKao48y+lsFzPPdEmH7nqdeELOge2MAcEG/Wn9Xgb/AF3IA/ywjzGtJS+hlALTGlw==
+"@vue/cli-plugin-pwa@^3.6.0":
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/@vue/cli-plugin-pwa/-/cli-plugin-pwa-3.6.0.tgz#4c09b03227ed4db7d9441602dfd9a149f4629920"
+  integrity sha512-SlbzvD64kUxt1XT02LxDpxYr3B7Uqu4LClrmRvvqMTRJO4WMAbbgRQY9ZuinnVUEfAKexqjjP3kz3xId4wy1OQ==
   dependencies:
-    "@vue/cli-shared-utils" "^3.5.1"
+    "@vue/cli-shared-utils" "^3.6.0"
     webpack ">=4 < 4.29"
     workbox-webpack-plugin "^3.6.3"
 
