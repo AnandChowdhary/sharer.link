@@ -988,10 +988,10 @@
     lodash.kebabcase "^4.1.1"
     svg-tags "^1.0.0"
 
-"@vue/babel-preset-app@^4.2.0":
-  version "4.2.0"
-  resolved "https://registry.yarnpkg.com/@vue/babel-preset-app/-/babel-preset-app-4.2.0.tgz#ec16cacf23ac68f6d662be40f14517ec64ac3f14"
-  integrity sha512-wS9STN/t5cJFu012C5IE3Nlu9xQOhompaNoqnD1MlFg+9htmTl+hZtOo8frqHPH0H4xpu3oF56ujbWLo3Harcw==
+"@vue/babel-preset-app@^4.2.1":
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/@vue/babel-preset-app/-/babel-preset-app-4.2.1.tgz#3407bbb2075390c9c710cf0379330ccd9c16d0bc"
+  integrity sha512-p3+d96qMGJl+3m+beofL7yPDpUcAM+WtvvSh2zh6KMZ0oVeN4jADySdzPIXVbyusuFzcjnOZACjWlMcoNdrK3Q==
   dependencies:
     "@babel/core" "^7.8.4"
     "@babel/helper-compilation-targets" "^7.8.4"
@@ -1060,14 +1060,14 @@
   resolved "https://registry.yarnpkg.com/@vue/cli-overlay/-/cli-overlay-4.2.1.tgz#669184fee4e992c04fe71917d02d75a7dd49df5f"
   integrity sha512-3lOqL71fdHBH8idt+A8SRhlBVJ1BhNAeJaVnC88+OCh4WYGidc95JGLE1fZIexTiV2AWmr9Bpn22C0hzcFWBJA==
 
-"@vue/cli-plugin-babel@^4.2.0":
-  version "4.2.0"
-  resolved "https://registry.yarnpkg.com/@vue/cli-plugin-babel/-/cli-plugin-babel-4.2.0.tgz#ac352550a0a36adfaab564d838906581d35460d6"
-  integrity sha512-UDMduk1NH8d+MoybvZLrJWrzDo5TuFP/UKZw3hnzFEAYigc+onC7isqAKbsgVFazfHcLlIbWSKEc0RaHPCWGHQ==
+"@vue/cli-plugin-babel@^4.2.1":
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/@vue/cli-plugin-babel/-/cli-plugin-babel-4.2.1.tgz#ddaf6df0c4c129937645d408c765942c8d57f06d"
+  integrity sha512-QTbYbJzwIszXwFuqHs2yJMGyly5Q/seJC8BUOABbh2O94X3bmA/9nKmQ6qkpjqrekL9IDKXOcwywgr4GrD+O0A==
   dependencies:
     "@babel/core" "^7.8.4"
-    "@vue/babel-preset-app" "^4.2.0"
-    "@vue/cli-shared-utils" "^4.2.0"
+    "@vue/babel-preset-app" "^4.2.1"
+    "@vue/cli-shared-utils" "^4.2.1"
     babel-loader "^8.0.6"
     cache-loader "^4.1.0"
     thread-loader "^2.1.3"
@@ -1168,7 +1168,7 @@
     webpack-dev-server "^3.10.2"
     webpack-merge "^4.2.2"
 
-"@vue/cli-shared-utils@^4.2.0", "@vue/cli-shared-utils@^4.2.1":
+"@vue/cli-shared-utils@^4.2.1":
   version "4.2.1"
   resolved "https://registry.yarnpkg.com/@vue/cli-shared-utils/-/cli-shared-utils-4.2.1.tgz#a7c2a31210733af367cbd097c1146f55bc49d6bc"
   integrity sha512-0Mj8AZFOn0wJla6QurMa9t5LYLQTfFcEGNYpUXdq6CuA2q/pNCAChJDwKXP1dXpofUHwMFx+FmJAARUvPNya7Q==
