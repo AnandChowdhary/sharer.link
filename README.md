@@ -8,7 +8,7 @@
 
 Sharer.link is a way to easily share platform-agnostic links for songs, movies, podcasts, and more. Just send a link and let the receiver decide which service to use to open them.
 
-Example: https://sharer.link/podcast/hello-internet-811377230
+Example: https://sharer-link.netlify.com/podcast/hello-internet-811377230
 
 ![Hello Internet example](https://raw.githubusercontent.com/AnandChowdhary/sharer.link/master/public/img/Screenshot%202019-03-23%20at%2016.05.46.png)
 
