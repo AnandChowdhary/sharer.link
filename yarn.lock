@@ -1186,12 +1186,12 @@
     thread-loader "^2.1.3"
     webpack "^4.0.0"
 
-"@vue/cli-plugin-pwa@^4.2.3":
-  version "4.2.3"
-  resolved "https://registry.yarnpkg.com/@vue/cli-plugin-pwa/-/cli-plugin-pwa-4.2.3.tgz#f1c030cbfa7da459d22ee200d79c570ef09ef7b3"
-  integrity sha512-Z5bx8OEmVr44q/roZjDQqkair7LLQRhsLI+reFl+RZq7BPa99qS9y3VFcdZcreneVpEMPd934G7zdDnZmgxXSg==
+"@vue/cli-plugin-pwa@^4.3.0":
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/@vue/cli-plugin-pwa/-/cli-plugin-pwa-4.3.0.tgz#1f588ed6675960a5ba5ee72441ab0408468d0d5b"
+  integrity sha512-ir8SvM13AN6urDOcAPaB3tGgd5M8lUAdCLlZD6fpkVVWG9fo+04wAzpvWcfD7p6hLuP/mYfF7E0cs8rGHx+Whw==
   dependencies:
-    "@vue/cli-shared-utils" "^4.2.3"
+    "@vue/cli-shared-utils" "^4.3.0"
     webpack "^4.0.0"
     workbox-webpack-plugin "^4.3.1"
 
